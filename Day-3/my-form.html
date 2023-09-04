@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Manisa Büyükşehir Belediyesi Çalışan Tanıma Formu</h1>
+      <nav>
+        <a href="https://www.manisa.bel.tr">Manisa Belediyesi Web Sayfası</a>
+      </nav>
+    </header>
+    <br /><br />
+    <section id="form">
+      <form>
+        <div>
+          <label for="name">Adınız:</label>
+          <input type="text" id="name" />
+        </div>
+
+        <div>
+          <label for="surname">Soyadınız:</label>
+          <input type="text" id="surname" />
+        </div>
+
+        <div>
+          <label for="parola">Parola:</label>
+          <input type="password" id="parola" />
+        </div>
+
+        <div>
+          <p>Hangi birimde çalışıyorsunuz?</p>
+          <input type="radio" id="blgislem" name="birimler" />
+          <label for="blgislem">Bilgi İşlem</label>
+
+          <input type="radio" id="imar" name="birimler" />
+          <label for="imar">İmar ve Şehircilik</label>
+
+          <input type="radio" id="mali-hiz" name="birimler" />
+          <label for="mali-hiz">Mali Hizmetler</label>
+        </div>
+
+        <div>
+          <label for="cities">Şehir</label>
+          <select id="cities">
+            <option value="45">Manisa</option>
+            <option value="34">İstanbul</option>
+            <option value="35">İzmir</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="eposta">Email</label>
+          <input type="email" id="eposta" />
+        </div>
+
+        <div>
+          <label for="birthday">Doğum tarihi</label>
+          <input type="date" id="birthday" />
+        </div>
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Tüm hakları saklıdır.</p>
+      <ul>
+        <li><a href="/iletisim">İletişim</a></li>
+        <li><a href="/gizlilik">Gizlilik Politikası</a></li>
+        <li><a href="/site-haritasi">Site Haritası</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
