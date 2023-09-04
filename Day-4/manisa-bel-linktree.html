@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manisa Büyükşehir Belediyesi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2{
+        font-family: sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0,0,0, 0.5);
+      }
+
+      body > img {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      section {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        inset: 0;
+        overflow-y: scroll;
+      }
+
+      section div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section > div {
+        padding: 100px 10px;
+      }
+
+      section div img {
+        width: 100px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 0 0 8px lightblue;
+      }
+
+      a {
+        display: flex;
+        width: 100%;
+        align-items: center; /*dikeyde hizalama*/
+        justify-content: center; /*yatayda hizalama*/
+        border: 1.5px solid white;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        gap: 20px;
+        border-radius: 4px;
+        transition-duration: 200ms;
+      }
+
+      a:hover {
+        background-color: white;
+        color: #0f172a;
+      }
+
+      a i {
+        font-size: 1.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/belediye2.jpg" alt="bg" />
+    <section>
+      <div>
+        <img src="images/manisa-bel-2.png" alt="pp" />
+        <h2>Manisa Büyükşehir Belediyesi</h2>
+        <div>
+          <a href="https://www.manisa.bel.tr" target="_blank">
+            <i class="fa-brands fa-buffer"></i>
+            <p>Website</p>
+          </a>
+          <a href="https://www.instagram.com/manisabsb/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+          </a>
+          <a href="https://twitter.com/manisabsb" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+            <p>Twitter</p>
+            <a href="https://www.facebook.com/manisabsb/?locale=tr_TR" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+                <p>Facebook</p>  
+          <a href="https://www.youtube.com/@ManisaBuyuksehirBldBasnMerkezi" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            <p>Youtube</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
